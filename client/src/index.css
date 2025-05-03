@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 220 14.3% 15.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 14.3% 15.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 14.3% 15.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 14 100% 60%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 165 82% 47%;
+  --secondary-foreground: 220 14.3% 15.1%;
+  --accent: 48 100% 50%;
+  --accent-foreground: 220 14.3% 15.1%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 220 14.3% 15.1%;
+  --radius: 0.5rem;
+  --chart-1: 14 100% 60%;
+  --chart-2: 165 82% 47%;
+  --chart-3: 48 100% 50%;
+  --chart-4: 220 14.3% 15.1%;
+  --chart-5: 217 92% 51%;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 14 100% 60%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 165 82% 47%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 48 100% 50%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .difficulty-easy {
+    @apply bg-[#43AA8B] text-white;
+  }
+
+  .difficulty-medium {
+    @apply bg-[#FFD23F] text-neutral-dark;
+  }
+
+  .difficulty-hard {
+    @apply bg-primary text-white;
+  }
+
+  .recipe-card {
+    @apply transition duration-300;
+  }
+
+  .recipe-card:hover {
+    transform: translateY(-4px);
+    @apply shadow-lg;
+  }
+}
