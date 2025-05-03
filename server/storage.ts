@@ -198,7 +198,7 @@ export class MemStorage implements IStorage {
       {
         title: "Lemon Garlic Salmon",
         description: "Perfectly grilled salmon with a tangy lemon garlic sauce and fresh herbs.",
-        imageUrl: "https://images.unsplash.com/photo-1564834723148-4a13679630de?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        imageUrl: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         prepTime: 30,
         difficulty: "easy",
         categoryId: 4, // Dinner
@@ -426,7 +426,7 @@ export class MemStorage implements IStorage {
       {
         title: "Apple Cinnamon Oatmeal",
         description: "Warm, comforting oatmeal with fresh apples, cinnamon, and maple syrup.",
-        imageUrl: "https://images.unsplash.com/photo-1517673132405-a56a62b18caf?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        imageUrl: "https://images.unsplash.com/photo-1586511925558-a4c6376fe65f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
         prepTime: 15,
         difficulty: "easy",
         categoryId: 2, // Breakfast
